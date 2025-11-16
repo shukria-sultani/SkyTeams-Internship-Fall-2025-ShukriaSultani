@@ -1,7 +1,6 @@
 // Author: Shukria Sultani
 // Date: 11/16/2025
 // Problem: Write tests for the function that reverse a string
-
 import { reverseString } from "./question-2.js";
 
 test("Should reverse an empty string", ()=>{
