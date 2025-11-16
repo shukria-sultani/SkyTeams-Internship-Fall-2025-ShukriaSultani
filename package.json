@@ -1,0 +1,23 @@
+{
+  "name": "skyteams-internship-fall-2025-shukriasultani",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+"test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage"  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shukria-sultani/SkyTeams-Internship-Fall-2025-ShukriaSultani.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shukria-sultani/SkyTeams-Internship-Fall-2025-ShukriaSultani/issues"
+  },
+  "homepage": "https://github.com/shukria-sultani/SkyTeams-Internship-Fall-2025-ShukriaSultani#readme",
+  "devDependencies": {
+    "jest": "^30.2.0"
+  }
+}
