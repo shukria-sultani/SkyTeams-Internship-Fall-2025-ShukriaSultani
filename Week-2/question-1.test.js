@@ -21,3 +21,6 @@ test("Should swap the variables containing array", ()=>{
 test("Should swap zero and negative number", ()=>{
     expect(swapVariables(-10, 0)).toEqual([0, -10])
 })
+test("Should swap variables with the same values", ()=>{
+    expect(swapVariables(10, 10)). toEqual([10, 10])
+})
