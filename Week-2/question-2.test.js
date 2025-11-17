@@ -1,6 +1,6 @@
 //Author: Shukria Sultani
 //Date:  11/17/2025
-//Problem:  Write test for the function that finds the largest and smallest of three numbers
+//Problem:  Write tests for the function that finds the largest and smallest of three numbers
 
 import {smallestLargest} from "./question-2.js"
 
