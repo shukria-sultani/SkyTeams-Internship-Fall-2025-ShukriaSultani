@@ -1,3 +1,6 @@
+//Author: Shukria Sultani
+//Date:  11/17/2025
+//Problem: Write tests for the function that converts temperature from Celsius to Fahrenheit and vice v
 import { tempConverter } from "./question-4.js";
 
 test("Should convert a standard Celsius temperature to Fahrenheit correctly", () => {
