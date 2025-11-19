@@ -1,6 +1,6 @@
 // Author: Shukria Sultani
 // Date: 11/19/2025
-// Problem: 
+// Problem: Write tests for the function that return the meaning of each traffic light.
 
 import { trafficLights } from "./question-12.js";
 

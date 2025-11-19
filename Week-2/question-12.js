@@ -18,9 +18,3 @@ export const trafficLights = (light)=>{
          return "Make sure you spelled the light correctly!"
     }
 }
-console.log(trafficLights("red"))
-console.log(trafficLights("yellow"))
-console.log(trafficLights("green"))
-console.log(trafficLights(""))
-console.log(trafficLights(12))
-console.log(trafficLights("ehei"))
