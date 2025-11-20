@@ -18,5 +18,5 @@ export const smallestLargest  = (num1, num2, num3)=>{
         smallest = numbersArray[i]
     }
   }
-  return [`Smallest: ${smallest}`, `Largest: ${largest}`]
+  return `Smallest: ${smallest} Largest: ${largest}`
 }

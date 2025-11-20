@@ -16,5 +16,5 @@ export const calculateRectangleProperties = (w, l)=>{
   const formattedArea = formatNumber(area)
   const formattedPerimeter = formatNumber(perimeter)
 
-  return ([`Area: ${formattedArea}`, `Perimeter: ${formattedPerimeter}`])
+  return `Area: ${formattedArea}, Perimeter: ${formattedPerimeter}`
 }
