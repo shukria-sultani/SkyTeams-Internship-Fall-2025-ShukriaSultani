@@ -12,16 +12,14 @@ export const findLargestNum = (numArray) =>{
         return "Array is empty"
     }
 
-     let largestNum = [...numArray].sort((a, b) => b -a);
-     return largestNum[0]
     
-    // let largestNum = numArray[0]
-    // for(let i = 0 ; i < numArray.length; i++){
-    //     if(numArray[i] > largestNum){
-    //         largestNum = numArray[i]
-    //     }
-    // }
-    // return largestNum
+    let largestNum = numArray[0]
+    for(let i = 0 ; i < numArray.length; i++){
+        if(numArray[i] > largestNum){
+            largestNum = numArray[i]
+        }
+    }
+    return largestNum
 
 
 }
