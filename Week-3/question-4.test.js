@@ -16,7 +16,7 @@ test("Should handle non-numeric inputs gracefully", ()=>{
 });
 
 test("Should handle large numbers correctly", ()=>{
-    expect(findFactors(850)).toEqual([1, 2, 5, 10, 17, 34, 50, 85, 170, 425, 850]);
+    expect(findFactors(850)).toEqual([1, 2, 5, 10, 17,25, 34, 50, 85, 170, 425, 850]);
 });
 
 test("Should handle prime numbers (only 2 factors)", ()=>{
