@@ -5,7 +5,7 @@
 import { reverseNumber } from "./question-19.js";
 
 test("Should handle a basic input",()=>{
-    expect(reverseNumber(9345)).toBe("5439")
+    expect(reverseNumber(9345)).toBe(5439)
 })
 test("Should return error message for non-numeric inputs",()=>{
     expect(reverseNumber("9345")).toBe("Input must be a number.")
@@ -13,9 +13,9 @@ test("Should return error message for non-numeric inputs",()=>{
     expect(reverseNumber(null)).toBe("Input must be a number.")
     expect(reverseNumber(undefined)).toBe("Input must be a number.")
 })
-test("Should handle decimal inputs", ()=>{
-    expect(reverseNumber(234.456)).toBe("654.432")
+test("Should handle decimal numbers", ()=>{
+    expect(reverseNumber(234.345)).toBe(543.432)
 })
 test("Should handle negative numbers", ()=>{
-    expect(reverseNumber(-345)).toBe("543-")
+    expect(reverseNumber(-345)).toBe(-543)
 })
