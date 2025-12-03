@@ -10,7 +10,7 @@
 
 export const convertToBinary = (number)=>{
     if(typeof number !== "number"){
-        return "Input must be a number."
+        return "Input must be a number"
     }
     let binary =[]
 
