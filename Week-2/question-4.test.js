@@ -20,7 +20,7 @@ test("Should handle negative temperatures in Celsius", () => {
 });
 
 test("Should handle decimal results for Celsius conversion", () => {
-    expect(tempConverter(75, "F")).toBe("23.88889°C"); 
+    expect(tempConverter(75, "F")).toBe("23.89°C"); 
 });
 
 test("Should return an error message for an invalid unit input", () => {
