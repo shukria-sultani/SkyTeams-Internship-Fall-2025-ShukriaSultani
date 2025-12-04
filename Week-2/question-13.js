@@ -6,9 +6,7 @@ export const getMonthDescription = (monthNo) => {
   if (typeof monthNo !== "number") {
     return "Input must be a number";
   }
-  if (monthNo < 1 || monthNo > 12) {
-    return "Input must be a number between 1-12";
-  }
+
   switch (monthNo) {
     case 1:
       return "January, 31 days";
@@ -34,6 +32,8 @@ export const getMonthDescription = (monthNo) => {
       return "November, 30 days";
     case 12:
       return "December, 31 days";
+    default:
+      return "Enter a number between 1 - 12."
 
   }
 };

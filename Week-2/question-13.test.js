@@ -45,10 +45,8 @@ test("Should return error message for non-numeric inputs", ()=>{
     expect(getMonthDescription(undefined)).toBe("Input must be a number")
 
 })
-test("Should return error message for inputs smaller than 1", ()=>{
-    expect(getMonthDescription(0)).toBe("Input must be a number between 1-12")
-    expect(getMonthDescription(-1)).toBe("Input must be a number between 1-12")
-})
-test("Should return error message for inputs greater than 12", ()=>{
-    expect(getMonthDescription(13)).toBe("Input must be a number between 1-12")
+
+test("Should handle numbers smaller than 1 or greater than 12 with default case", ()=>{
+    expect(getMonthDescription(13)).toBe("Enter a number between 1 - 12.")
+    expect(getMonthDescription(0)).toBe("Enter a number between 1 - 12.")
 })
