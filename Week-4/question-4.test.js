@@ -1,6 +1,6 @@
 // Author: Shukria Sultani
 // Date: 12/7/2025
-// Problem: Write tess for the function that finds the shared elements in two arrays.
+// Problem: Write tests for the function that finds the shared elements in two arrays.
 
 import { findSharedElements } from "./question-4.js";
 test("Should handle basic input", ()=>{
