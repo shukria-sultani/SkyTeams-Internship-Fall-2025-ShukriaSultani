@@ -6,12 +6,16 @@
 
 
 export const abbreviateString = (str)=>{
+    if(typeof str !== "string"){
+        return "Input must be a string."
+    }
     let splitted = str.split(" ")
     let abbreviations = []
      splitted.forEach(element => {
         let newArray = Array.from(element)
         abbreviations.push(newArray[0])
      });
-    return abbreviations
+     let joinedString = abbreviations.join(" ")
+    return joinedString
 }
 console.log(abbreviateString("I am in the class"))
