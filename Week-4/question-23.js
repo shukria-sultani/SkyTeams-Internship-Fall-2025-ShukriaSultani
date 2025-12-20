@@ -4,7 +4,12 @@
 // Input: [1,1,1,2,2,3], k=2 → [1,2]
 
 export const getKFrequentElements = (array, k)=>{
-    let frequents = []
+    if(!Array.isArray(array)){
+        return "Input must be an array."
+    }
+    if(typeof k !== "number"){
+        return "The K value should be a number."
+    }
     let elementsWithOccurance = {}
     for(let i = 0; i < array.length; i++){
         let element = array[i]
@@ -14,10 +19,9 @@ export const getKFrequentElements = (array, k)=>{
             elementsWithOccurance[element] = 1
         }
     }
-
    let elementsArray = Object.entries(elementsWithOccurance)
    let sortedArray = elementsArray.sort((a, b)=> b[1] -a[1])
    let kFrequent = sortedArray.slice(0, k)
-   console.log(kFrequent)
+  return kFrequent
 }
-getKFrequentElements([1,1,1,2,2,3,3,3,3,3,3], 2)
+console.log(getKFrequentElements([1,1,1,2,2,3,3,3,3,3,3], 2))
