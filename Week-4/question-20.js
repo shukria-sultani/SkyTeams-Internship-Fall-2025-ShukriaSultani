@@ -4,6 +4,9 @@
 // Input: "{[()]}" → Output: Balanced
 
 export const isBalancedParentheses = (str)=>{
+    if(typeof str !== "string"){
+        return "Input must be a string."
+    }
    let parenthesesObject = {
         "(": ")",
         "{": "}",
