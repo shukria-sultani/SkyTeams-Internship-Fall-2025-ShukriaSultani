@@ -4,6 +4,9 @@
 // Input: "babad" → "bab" or "aba"
 
 export const longestPalindromicSubstring = (str) => {
+  if(typeof str !== "string"){
+    return "Input must be a string."
+  }
   let longestPalindrome = "";
   let palindromeLength = 0;
 
@@ -33,8 +36,6 @@ export const longestPalindromicSubstring = (str) => {
     }
   }
 
-  console.log(longestPalindrome);
   return longestPalindrome;
 };
 
-longestPalindromicSubstring("babad");
