@@ -1,6 +1,13 @@
+// Author : Shukria Sultani
+// Date: 12/21/2025
+// problem: 22. Merge Overlapping Intervals
+// Input: [[1,3],[2,6],[8,10]] → [[1,6],[8,10]]
 export const findOverlappingIntervals = (intervals) => {
+  if(!Array.isArray(intervals)){
+    return "Input must be an array."
+  }
     let result = [];
-    let currentInterval = intervals[0]; // start with the first interval
+    let currentInterval = intervals[0]; 
   
     for (let i = 1; i < intervals.length; i++) {
       let nextInterval = intervals[i];
@@ -19,9 +26,8 @@ export const findOverlappingIntervals = (intervals) => {
     }
   
     result.push(currentInterval);
-  
-    console.log(result);
+  return result
   };
   
-  findOverlappingIntervals([[1,3],[2,6],[8,10]]);
+  console.log(findOverlappingIntervals([[1,3],[2,6],[8,10]]));
   
