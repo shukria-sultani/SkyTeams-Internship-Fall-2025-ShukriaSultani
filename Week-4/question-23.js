@@ -20,8 +20,25 @@ export const getKFrequentElements = (array, k)=>{
         }
     }
    let elementsArray = Object.entries(elementsWithOccurance)
-   let sortedArray = elementsArray.sort((a, b)=> b[1] -a[1])
+
+   let sortedArray = []
+   while(elementsArray.length > 0){
+    let  largeIndex = 0
+    for(let i = 0; i < elementsArray.length; i++){
+        if(elementsArray[i][1] > elementsArray[largeIndex][1]){
+            largeIndex  = i
+        }
+    }
+    let largeNum = elementsArray[largeIndex];
+    sortedArray.push(largeNum);
+    elementsArray.splice(largeIndex, 1);
+   }
    let kFrequent = sortedArray.slice(0, k)
-  return kFrequent
+   let result = []
+   for(let i = 0; i < kFrequent.length;i++){
+    let convertToNumber = parseInt(kFrequent[i][0])
+    result.push(convertToNumber)
+   }
+  return result
 }
 console.log(getKFrequentElements([1,1,1,2,2,3,3,3,3,3,3], 2))

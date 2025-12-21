@@ -5,7 +5,7 @@
 import { getKFrequentElements } from "./question-23.js";
 
 test("Should handle basic input", ()=>{
-    expect(getKFrequentElements([1,1,1,2,2,3,3,3,3,3,3], 2)).toEqual([ [ '3', 6 ], [ '1', 3 ] ])
+    expect(getKFrequentElements([1,1,1,2,2,3,3,3,3,3,3], 2)).toEqual([3, 1])
 })
 test("Should handle non-array inputs",()=>{
     expect(getKFrequentElements(1234, 3)).toBe("Input must be an array.")
