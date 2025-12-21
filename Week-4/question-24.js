@@ -5,6 +5,12 @@
 // position if the array were sorted in descending order.
 
 export const findKthLargestElement = (array, k)=>{
+  if(!Array.isArray(array)){
+    return "Input must be an array."
+}
+if(typeof k !== "number"){
+    return "The K value should be a number."
+}
    let sortedArray =[]
   while(array.length > 0){
     let largeIndex = 0;
@@ -18,6 +24,6 @@ export const findKthLargestElement = (array, k)=>{
     array.splice(largeIndex, 1);
 }
   let kthElement = sortedArray[k]
-  console.log(kthElement)
+   return kthElement
 }
-findKthLargestElement([1,3,4,6,2], 2)
+console.log(findKthLargestElement([1,3,4,6,2], 2))
